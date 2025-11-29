@@ -1,0 +1,93 @@
+
+/* --------- RETRO FUTURISTA MINIMAL --------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #070a14;
+    color: #dfe7ff;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Fondo cuadriculado tipo futurista */
+.grid-bg {
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(#1b2335 1px, transparent 1px),
+        linear-gradient(90deg, #1b2335 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.12;
+    z-index: -1;
+}
+
+/* HEADER estilo neón */
+header {
+    text-align: center;
+    padding: 80px 20px 60px;
+    background: radial-gradient(circle at 50% 30%, rgba(0,112,255,0.35), transparent 70%);
+}
+
+header h1 {
+    font-size: 48px;
+    color: #99caff;
+    text-shadow: 0 0 8px #0084ff;
+}
+
+.subtitulo {
+    font-size: 18px;
+    opacity: 0.75;
+    margin-top: 8px;
+}
+
+/* Tarjetas translúcidas */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto 80px;
+}
+
+section {
+    background: rgba(255,255,255,0.04);
+    padding: 25px 30px;
+    margin: 30px 0;
+    border: 1px solid rgba(0,140,255,0.25);
+    border-radius: 14px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 18px rgba(0,140,255,0.18);
+    transition: 0.25s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 26px rgba(0,140,255,0.35);
+}
+
+h2 {
+    color: #78b6ff;
+    margin-bottom: 12px;
+    text-shadow: 0 0 6px #0066ff;
+}
+
+ul {
+    padding-left: 22px;
+    margin-top: 10px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    opacity: 0.65;
+    font-size: 14px;
+}
